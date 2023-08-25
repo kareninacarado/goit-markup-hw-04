@@ -23,22 +23,28 @@ body {
     letter-spacing: 0.32px;
 }
 
-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-}
-
+p,
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p,
-ul {
+h6 {
+    margin: 0;
+}
+ul,
+ol {
     margin: 0;
     padding: 0;
+}
+img {
+    display: block;
+}
+
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .lists {
@@ -67,19 +73,21 @@ ul {
 }
 
 .header {
+    background-color: var(--whitecolor);
     border-bottom: 1px solid var(--cornflower, #e7e9fc);
 }
 
-.container {
-    margin: 0 auto;
-    width: 1158px;
-    padding: 0 15px;
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header-logo {
     color: var(--navyblue, #2e2f42);
-    font-family: Raleway;
+    font-family: "Raleway", sans-serif;
     font-size: 18px;
+    font-style: normal;
     font-weight: 800;
     line-height: 21px;
     letter-spacing: 0.54px;
@@ -138,12 +146,17 @@ ul {
 }
 
 .hero-section {
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--navyblue);
-    padding: 188px 0;
+    padding-top: 188px;
+    padding-bottom: 188px;
+    background-image: linear-gradient(
+        to right,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-button {
