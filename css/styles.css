@@ -43,7 +43,7 @@ img {
 }
 
 .body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -55,7 +55,7 @@ img {
     list-style: none;
 }
 
-.link {
+.links {
     text-decoration: none;
     color: var(--navyblue);
 }
@@ -80,10 +80,19 @@ img {
     text-transform: capitalize;
 }
 
-.title {
+.titles {
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 0.4px;
+}
+
+.lists {
+    list-style-type: none;
+    padding: 0;
+}
+
+.bottom-text {
+    color: var(--slatecolor);
 }
 
 /* Header CSS */
@@ -112,7 +121,7 @@ img {
 
 .header-logo {
     color: var(--navyblue, #2e2f42);
-    font-family: "Raleway", sans-serif;
+    font-family: "Raleway";
     font-size: 18px;
     font-style: normal;
     font-weight: 800;
@@ -126,7 +135,7 @@ img {
     color: var(--iriscolor);
 }
 
-.web-logo {
+.header-web-logo {
     color: var(--iriscolor);
 }
 
@@ -216,13 +225,15 @@ img {
 }
 
 /* Sections CSS */
+/* Section 2 */
+
 .section {
     padding-top: 120px;
     padding-bottom: 120px;
     background-color: var(--whitecolor);
 }
 
-.section-list-wrap {
+.features-list-wrap {
     display: flex;
     flex-direction: column;
 }
@@ -233,7 +244,7 @@ img {
     justify-content: space-evenly;
 }
 
-.section-list-container {
+.features-list-container {
     display: flex;
     justify-content: space-evenly;
 }
@@ -254,12 +265,14 @@ img {
     padding-top: 0;
 }
 
-.features-item-title {
+.features-title {
     color: var(--navyblue);
     justify-content: center;
 }
 
-.section-item-name {
+/* What we do */
+
+.what-we-do-title-name {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -269,10 +282,14 @@ img {
     margin-bottom: 8px;
 }
 
-.section-item-position {
+.what-we-do-list {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.what-we-do-item {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -293,6 +310,39 @@ img {
     align-items: center;
     border-radius: 4px;
     margin-bottom: 8px;
+}
+/* Team Members */
+
+.team-title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
+    text-align: center;
+}
+
+.team-item {
+    background-color: var(--whitecolor);
+    display: flex;
+    width: calc((100% - 40px) / 3);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+}
+
+.team-name {
+    color: var(--navyblue);
+}
+
+.team-bottom-text {
+    color: var(--slatecolor);
 }
 
 .team-social-list {
@@ -346,22 +396,6 @@ img {
     background-color: var(--cloudcolor);
 }
 
-.section-item {
-    background-color: var(--whitecolor);
-    display: flex;
-    width: calc((100% - 40px) / 3);
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
-}
-
-.team-name {
-    color: var(--navyblue);
-}
-
-.team-bottom-text {
-    color: var(--slatecolor);
-}
 
 /* Customers */
 
@@ -408,7 +442,7 @@ img {
 }
 
 /* Footer CSS */
-.footer {
+.footer-section {
     background-color: var(--navyblue);
     padding-top: 100px;
     padding-bottom: 100px;
@@ -435,12 +469,12 @@ img {
     color: var(--iriscolor);
 }
 
-.footer-logo-web {
+.footer-web-logo {
     color: var(--iriscolor);
 }
 
 
-.footer-text {
+.footer-bottom-text {
     color: var(--cloudcolor);
     margin-top: 17px;
 }
@@ -526,41 +560,41 @@ img {
     border-color: var(--oceancolor);
 }
 
-/* Services */
+/* Portfolio Core */
 
-.services-link:hover.
-.services-link:focus {
+.portfolio-link:hover.
+.portfolio-link:focus {
     display: block;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
-.services-list {
+.portfolio-list {
     background-color: var(--whitecolor);
     display: flex;
     flex-wrap: wrap;
     gap: 48px 24px;
 }
 
-.services-item{
+.portfolio-item{
     background-color: var(--whitecolor);
 }
 
-.services-title {
+.portfolio-title {
     color: var(--navyblue);
     margin-bottom: 8px;
 }
 
-.services-text {
+.portfolio-text {
     color: var(--slatecolor);
 }
 
-.services-container {
+.portfolio-container {
     margin-top: 0;
 }
 
-.services-title-wrap {
+.portfolio-description {
     padding: 32px 16px;
     border: 1px solid var(--cornflower, #e7e9fc);
     border-top: none;
