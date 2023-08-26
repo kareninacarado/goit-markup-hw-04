@@ -126,7 +126,7 @@ img {
     color: var(--iriscolor);
 }
 
-.header-logo-web {
+.web-logo {
     color: var(--iriscolor);
 }
 
@@ -227,7 +227,7 @@ img {
     flex-direction: column;
 }
 
-.section-list {
+.features-list {
     display: flex;
     gap: 24px;
     justify-content: space-evenly;
@@ -254,7 +254,7 @@ img {
     padding-top: 0;
 }
 
-.section-item-title {
+.features-item-title {
     color: var(--navyblue);
     justify-content: center;
 }
@@ -276,7 +276,7 @@ img {
     align-items: center;
 }
 
-.section-list-item {
+.features-list-item {
     background-color: var(--whitecolor);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
@@ -334,7 +334,7 @@ img {
     gap: 32px;
 }
 
-.section-item-wrap {
+.card-content {
     padding-top: 32px;
     padding-bottom: 32px;
     gap: 32px;
@@ -355,11 +355,11 @@ img {
     gap: 8px;
 }
 
-.section-item-name {
+.team-name {
     color: var(--navyblue);
 }
 
-.section-item-position {
+.team-bottom-text {
     color: var(--slatecolor);
 }
 
